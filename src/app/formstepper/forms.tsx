@@ -16,7 +16,7 @@ const FormRadio: React.FC<FRProps> = ({selected, text, callback}) => {
         } 
         className={`w-11/12 md:w-[200px] my-[5px] flex md:w-[120px] h-[40px] border-2 border-black ${selected?"bg-black":"bg-white"} rounded-[8px]`}>
             <div className={`h-[15px] w-[15px] flex ${selected? "bg-white":""} ml-[10px] my-auto rounded-[10px] border border-black my-[5px]`}>
-                <Image className={`m-auto `} src={"check.svg"} alt="" width={10} height={10}/>
+                <Image className={`m-auto ${selected?"visible":"invisible"}`} src={"check.svg"} alt="" width={10} height={10}/>
             </div>
             <div className="mx-[8px] my-auto">
                 <p className={`text-[12px] ${selected?"text-white":"text-black"}`}>{text}</p>

@@ -43,9 +43,9 @@ const FormStepper = () => {
                 </div>
             </div>
             {/* controls */}
-            <div className="mx-auto my-[20px]">
+            <div className="mx-auto my-[20px] mb-[40px]">
                 <button
-                className={`mx-[5px] border border-black rounded bg-white px-[20px] py-[10px] ${step == 1?"text-[#999999] border-[#999999]":"text-black"} `}
+                className={`mx-[5px] border border-black rounded bg-white px-[20px] py-[10px] ${step == 1?"text-[#999999] border-[#909090]":"text-black"} `}
                 onClick={
                     () => {
                         if(step < 4 && step > 1){
